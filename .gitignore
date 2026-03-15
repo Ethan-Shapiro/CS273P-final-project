@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Dataset — full data is too large for GitHub
+data/*
+!data/sample/
+!data/sample/**
+
+# Model checkpoints (large binary files)
+output/**/*.pth
+
+# Keep everything else in output/
+!output/**/*.json
+!output/**/*.csv
+!output/**/*.png
