@@ -1,0 +1,42 @@
+{
+  "Ablation_A": {
+    "test_auc": 0.9282964702812031,
+    "test_pauc": 0.14691231160696805,
+    "best_val_auc": 0.923729366477458,
+    "best_val_pauc": 0.14658445879819926,
+    "desc": "Tabular Only (MLP)",
+    "image_branch": "None",
+    "tabular_branch": "MLP",
+    "pooling": "N/A"
+  },
+  "Ablation_B": {
+    "test_auc": 0.9057871729627455,
+    "test_pauc": 0.13108566581849024,
+    "best_val_auc": 0.8680759444118223,
+    "best_val_pauc": 0.11115025771514318,
+    "desc": "Image Only (EfficientNet + GeM)",
+    "image_branch": "EfficientNet",
+    "tabular_branch": "None",
+    "pooling": "GeM"
+  },
+  "Ablation_C": {
+    "test_auc": 0.9390944085600574,
+    "test_pauc": 0.15630749657467208,
+    "best_val_auc": 0.895543811574346,
+    "best_val_pauc": 0.12917400665492265,
+    "desc": "Multimodal with AvgPool",
+    "image_branch": "EfficientNet",
+    "tabular_branch": "MLP",
+    "pooling": "AvgPool"
+  },
+  "Ablation_D": {
+    "test_auc": 0.8817120114830038,
+    "test_pauc": 0.10955666470933643,
+    "best_val_auc": 0.8484210869707053,
+    "best_val_pauc": 0.09561394923990336,
+    "desc": "Multimodal with Frozen Backbone",
+    "image_branch": "EfficientNet (frozen)",
+    "tabular_branch": "MLP",
+    "pooling": "GeM"
+  }
+}

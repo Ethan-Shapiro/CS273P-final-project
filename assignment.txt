@@ -1,0 +1,147 @@
+CS273P Final Project Guidelines
+1. Objective
+The goal of the final project is to design, implement, and solve a real-world machine learning problem.
+
+This project is intended to give you hands-on experience in:
+
+Formulating a concrete ML problem
+
+Designing appropriate models
+
+Implementing the solution
+
+Training and debugging models
+
+Evaluating performance rigorously
+
+Communicating results clearly
+
+The final project is a key component of this course. It is where you transition from learning concepts to practicing machine learning in a realistic setting.
+
+2. Project Topics
+Topics are open-ended. You are welcome to choose your own project.
+
+A good source of real-world problems is Kaggle competitions:
+👉 https://www.kaggle.com/competitions
+
+You may also use research papers, domain-specific datasets, or industry-inspired problems.
+
+Your project should address a meaningful and non-trivial problem.
+
+3. Expected Level of Sophistication
+The project must demonstrate sufficient technical depth.
+
+❌ Out of Scope
+The following would generally be considered too basic:
+
+Simply running a sklearn model
+
+Using off-the-shelf decision trees, e.g., random forest, XGBoosting etc without meaningful modification or analysis
+
+✅ Expected Level
+Ideally, you should:
+
+Develop and implement deep learning models using PyTorch
+
+Design custom architectures, loss functions, or training strategies
+
+Perform thoughtful experimentation and ablation studies
+
+Analyze results carefully
+
+You are encouraged to explore modern techniques such as neural nets, CNNs, RNNs, transformers, deep generative models, graph neural nets, LLMs. 
+
+4. Use of Open-Source Code
+You are welcome to:
+
+Use open-source repositories
+
+Build on existing pretrained models
+
+Fine-tune foundation models
+
+Reuse standard components
+
+You do not need to build everything from scratch.
+
+However:
+
+You must clearly document what code is borrowed.
+
+You must demonstrate meaningful contribution beyond simply running someone else’s code.
+
+5. Team Policy
+You are encouraged to work in teams.
+
+Each team may have at most 3 members.
+
+Teams larger than 3 are not allowed.
+
+You may also choose to work individually.
+
+All team members are expected to contribute substantially.
+
+6. Submission Requirements
+You must submit:
+
+(A) Final Written Report
+The report should include:
+
+Problem definition and motivation
+
+Related work
+
+Dataset description
+
+Model design
+
+Training procedure
+
+Evaluation metrics
+
+Experimental results
+
+Analysis and discussion
+
+Limitations and future work
+
+Clarity, rigor, and technical depth matter.
+
+(B) GitHub Repository
+You must deposit your code in a public or accessible GitHub repository.
+
+The repository must include:
+
+A README.md file that clearly explains:
+
+Project overview
+
+Setup instructions
+
+Required dependencies
+
+How to train the model
+
+How to evaluate the model
+
+Expected outputs
+
+Clear instructions on:
+
+Where to download the dataset
+
+How to preprocess the data
+
+How to reproduce your results
+
+A small sample dataset (if the real dataset is private)
+
+A demo notebook (e.g., Jupyter notebook) that allows us to:
+
+Run the code
+
+Test the model
+
+Reproduce key results
+
+Based solely on your instructions, the teaching staff should be able to set up and run your code successfully.

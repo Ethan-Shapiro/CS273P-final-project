@@ -1,0 +1,12 @@
+numpy
+pandas
+polars
+pyarrow
+torch
+torchvision
+timm
+opencv-python
+albumentations
+scikit-learn
+tqdm
+matplotlib
