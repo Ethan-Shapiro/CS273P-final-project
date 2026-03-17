@@ -1,8 +1,8 @@
 {
-  "test_auc": 0.9013668689241208,
-  "test_pauc": 0.12644516213218499,
-  "best_val_auc": 0.8652785933320285,
-  "best_val_pauc": 0.10750146799765119,
+  "test_auc": 0.841044127866574,
+  "test_pauc": 0.08827310632383593,
+  "best_val_auc": 0.9265960525554205,
+  "best_val_pauc": 0.14442322162412455,
   "desc": "Baseline (EfficientNet + MLP + GeM)",
   "image_branch": "EfficientNet",
   "tabular_branch": "MLP",

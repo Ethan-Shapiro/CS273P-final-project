@@ -6,16 +6,16 @@
 
 ## 1. Problem Definition and Motivation
 
-Skin cancer is the most commonly diagnosed cancer worldwide, accounting for approximately one-third of all cancer diagnoses annually. Early detection is critical: when identified at an early stage, the five-year survival rate for melanoma exceeds 99%, but drops below 30% for late-stage detection. The clinical workflow for skin cancer screening relies heavily on visual inspection by dermatologists, a process that is both time-intensive and subject to inter-observer variability.
+Skin cancer is a dangerous disease and is the most common type of cancer. It accounts for around 1/3 of cancer diagnoise. If detected early survival rate is high with around 99% but if detected late that survival rate drops down to 30%. Usually detection is done by a dermatologist which a lot of people do not have access to. 
 
-The **ISIC 2024 Challenge — Skin Cancer Detection with 3D Total Body Photography** (hosted on Kaggle) provides a large-scale dataset of dermoscopic images paired with rich clinical metadata. The competition objective is binary classification: given a skin lesion, predict whether it is **malignant** (target = 1) or **benign** (target = 0).
+We used data and the challenge set from the  **ISIC 2024 Challenge — Skin Cancer Detection with 3D Total Body Photography** hosted by Kaggle. We plan to identify whether a skin legion is malignant (target=1) or benign (target=0).
 
-This project addresses the challenge through a **multimodal deep learning approach** that jointly leverages:
+Our project addresses the challenge through a **multimodal deep learning approach** that jointly leverages:
 
 1. **Visual features** extracted from dermoscopic images via a convolutional neural network (EfficientNet-B0), and
 2. **Tabular clinical features** including lesion geometry, color statistics, patient demographics, and 42 hand-engineered derived measurements, processed through a multi-layer perceptron (MLP).
 
-The central research question is: **does fusing image and tabular modalities through a unified neural architecture improve classification performance over either modality alone?** We investigate this through a systematic ablation study that isolates the contribution of each component.
+The central research question is: **Does using image and text data help detection of skin cancer then just image or text alone?** We experimented around using ablation to find if combining the techniques yielded better performance.
 
 ---
 
@@ -40,18 +40,17 @@ The central research question is: **does fusing image and tabular modalities thr
 The dataset originates from the ISIC 2024 Kaggle Challenge and consists of two components:
 
 - **Tabular metadata** (`train-metadata.csv`): 401,059 lesion records with 55 columns including patient demographics, lesion measurements, and color/shape statistics derived from 3D total body photography.
-- **Dermoscopic images** (`train-image/image/`): One JPEG image per lesion, captured via close-up tile extraction from 3D body scans.
+- **Dermoscopic images** (`train-image/image/`): One image per lesion, captured via close-up tile extraction from 3D body scans.
 
 ### 3.2 Class Distribution
-
-The dataset exhibits extreme class imbalance:
 
 | Class | Count | Percentage |
 |-------|-------|------------|
 | Benign (target = 0) | 400,666 | 99.90% |
 | Malignant (target = 1) | 393 | 0.10% |
 
-This 1:1,020 imbalance ratio presents a significant modeling challenge and necessitates careful handling during training.
+Our dataset is very imbalanced. 
+This 1:1,020 ratio needs to be handled correctly. 
 
 ### 3.3 Tabular Features
 
@@ -70,11 +69,12 @@ We use **75 numeric features** organized into three categories:
 
 ### 3.4 Data Balancing
 
-To address the extreme imbalance, we retain all 393 positive samples and subsample negatives at a 1:20 ratio, yielding approximately 8,253 balanced samples. During training, the dataloader further enforces 50/50 class balance per batch by randomly drawing from separate positive and negative pools each iteration.
+To attack the massive imbalance in our dataset we downsampled the amount of negative cases. We only used 20 for every 1 positive sample we had. 
+Also during training use had the dataloader use 50/50 class balance per batch randomly drawing from positives and negatives.
 
 ### 3.5 Train / Validation / Test Splits
 
-Since the competition does not provide labeled test data, we partition the training set using **StratifiedGroupKFold** with 5 folds, grouping by `patient_id` to prevent data leakage (no patient appears in more than one split):
+We split the training data into training and test. We used **StraifiedGroupKFold** with 5 folds. We also made sure patients were not split up by grouping by patient_id preventing data leakage.
 
 | Split | Folds Used | Samples | Purpose |
 |-------|-----------|---------|---------|
@@ -88,7 +88,7 @@ Since the competition does not provide labeled test data, we partition the train
 
 ### 4.1 Architecture Overview
 
-We propose a **late-fusion multimodal architecture** that processes images and tabular data through independent branches before combining their representations for classification.
+We created a late fusion multimodel architecture that combines independent branches of image and tabular data to create classifications.
 
 ```
                   ┌──────────────────────────────────────┐
@@ -206,11 +206,11 @@ During training, images undergo the following augmentation pipeline (using the A
 | RandomBrightnessContrast | limit=0.1 each | 0.5 |
 | Normalize | ImageNet mean/std | 1.0 |
 
-Validation and test images receive only resize and normalization.
+The only data augmentation performed on validation and test images was resizing and normalization.
 
 ### 5.4 Tabular Preprocessing
 
-All 75 tabular features are Z-score normalized using statistics computed exclusively on the training set:
+All 75 tabular features are Z-score normalized obtained from training data only:
 
 $$x_{\text{norm}} = \frac{x - \mu_{\text{train}}}{\sigma_{\text{train}} + \epsilon}$$
 
@@ -220,8 +220,8 @@ where $\epsilon = 10^{-8}$ prevents division by zero. Missing values are imputed
 
 Two levels of class balancing are applied:
 
-1. **Dataset level**: The full dataset (401K samples) is subsampled to a 1:20 positive-to-negative ratio (~8,253 samples).
-2. **Batch level**: The training dataloader randomly selects from the positive or negative pool with equal probability for each sample, ensuring each batch is approximately 50% positive and 50% negative regardless of the dataset ratio.
+1. **Dataset level**: We downsamples using 1:20 ratio of positive:negatives. (~8,253 samples).
+2. **Batch level**: We enforced in each batch to get keep the ratio 50:50 between positives and negatives. 
 
 ---
 

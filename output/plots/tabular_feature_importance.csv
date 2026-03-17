@@ -1,77 +1,77 @@
 feature,feature_short,importance
-tbp_lv_areaMM2,areaMM2,1.1357887
-index_age_size_symmetry,index age size symmetry,1.119308
-lesion_size_ratio,lesion size ratio,1.1018356
-tbp_lv_Cext,Cext,1.1014509
-hue_contrast,hue contrast,1.099044
-lesion_visibility_score,lesion visibility score,1.0951958
-border_color_interaction_2,border color interaction 2,1.0945023
-tbp_lv_deltaLB,deltaLB,1.0921932
-age_normalized_nevi_confidence_2,age normalized nevi confidence 2,1.0909679
-tbp_lv_nevi_confidence,nevi confidence,1.09023
-color_uniformity,color uniformity,1.0900759
-lesion_shape_index,lesion shape index,1.0900418
-tbp_lv_A,A,1.0865359
-border_color_interaction,border color interaction,1.0857095
-size_age_interaction,size age interaction,1.0856531
-tbp_lv_area_perim_ratio,area perim ratio,1.085079
-border_length_ratio,border length ratio,1.0797431
-color_range,color range,1.0791496
-tbp_lv_deltaA,deltaA,1.0783101
-lesion_orientation_3d,lesion orientation 3d,1.0780799
-mean_hue_difference,mean hue difference,1.0735269
-tbp_lv_C,C,1.0734926
-symmetry_perimeter_interaction,symmetry perimeter interaction,1.0716642
-tbp_lv_Bext,Bext,1.070493
-size_color_contrast_ratio,size color contrast ratio,1.06918
-lesion_severity_index,lesion severity index,1.0686917
-tbp_lv_symm_2axis,symm 2axis,1.0684347
-tbp_lv_Lext,Lext,1.067021
-tbp_lv_y,y,1.0668226
-color_contrast_index,color contrast index,1.0661613
-shape_color_consistency,shape color consistency,1.063115
-tbp_lv_L,L,1.0622576
-clin_size_long_diam_mm,clin size long diam mm,1.0605057
-tbp_lv_minorAxisMM,minorAxisMM,1.0599082
-tbp_lv_color_std_mean,color std mean,1.0581661
-tbp_lv_x,x,1.0581588
-tbp_lv_deltaL,deltaL,1.0579015
-consistency_color,consistency color,1.0564295
-tbp_lv_stdL,stdL,1.0563202
-hue_color_std_interaction,hue color std interaction,1.0562792
-overall_color_difference,overall color difference,1.0536994
-tbp_lv_deltaLBnorm,deltaLBnorm,1.0536939
-age_normalized_nevi_confidence,age normalized nevi confidence,1.0491179
-tbp_lv_symm_2axis_angle,symm 2axis angle,1.0489948
-normalized_lesion_size,normalized lesion size,1.0474482
-position_distance_3d,position distance 3d,1.0471202
-color_shape_composite_index,color shape composite index,1.0467383
-tbp_lv_Hext,Hext,1.0457495
-tbp_lv_perimeterMM,perimeterMM,1.0442953
-shape_complexity_index,shape complexity index,1.0426264
-tbp_lv_stdLExt,stdLExt,1.0418439
-border_complexity,border complexity,1.0411369
-tbp_lv_H,H,1.0378754
-age_size_symmetry_index,age size symmetry index,1.0368125
-tbp_lv_radial_color_std_max,radial color std max,1.0355484
-tbp_lv_deltaB,deltaB,1.0353792
-consistency_symmetry_border,consistency symmetry border,1.0350477
-symmetry_border_consistency,symmetry border consistency,1.0334167
-color_asymmetry_index,color asymmetry index,1.033277
-tbp_lv_norm_color,norm color,1.0302764
-tbp_lv_z,z,1.0287414
-luminance_contrast,luminance contrast,1.0282956
-color_variance_ratio,color variance ratio,1.0262147
-age_approx,age approx,1.0249889
-volume_approximation_3d,volume approximation 3d,1.0239754
-tbp_lv_Aext,Aext,1.023725
-tbp_lv_eccentricity,eccentricity,1.0227475
-lesion_color_difference,lesion color difference,1.0220802
-color_consistency,color consistency,1.0159383
-perimeter_to_area_ratio,perimeter to area ratio,1.0115862
-tbp_lv_norm_border,norm border,1.0073485
-comprehensive_lesion_index,comprehensive lesion index,1.004112
-std_dev_contrast,std dev contrast,1.0022187
-tbp_lv_B,B,1.0003675
-area_to_perimeter_ratio,area to perimeter ratio,0.99987
-log_lesion_area,log lesion area,0.99606204
+tbp_lv_areaMM2,areaMM2,1.1353493
+index_age_size_symmetry,index age size symmetry,1.1182666
+lesion_size_ratio,lesion size ratio,1.1018223
+tbp_lv_Cext,Cext,1.0992892
+hue_contrast,hue contrast,1.0981967
+border_color_interaction_2,border color interaction 2,1.0965259
+lesion_visibility_score,lesion visibility score,1.0948799
+tbp_lv_deltaLB,deltaLB,1.0948665
+tbp_lv_nevi_confidence,nevi confidence,1.09033
+lesion_shape_index,lesion shape index,1.0902475
+age_normalized_nevi_confidence_2,age normalized nevi confidence 2,1.0895369
+color_uniformity,color uniformity,1.0891958
+border_color_interaction,border color interaction,1.0852275
+tbp_lv_A,A,1.0850859
+size_age_interaction,size age interaction,1.0842106
+tbp_lv_area_perim_ratio,area perim ratio,1.0823853
+tbp_lv_deltaA,deltaA,1.0794736
+border_length_ratio,border length ratio,1.0789326
+color_range,color range,1.0778636
+lesion_orientation_3d,lesion orientation 3d,1.0775899
+tbp_lv_C,C,1.0735509
+tbp_lv_Bext,Bext,1.0733229
+mean_hue_difference,mean hue difference,1.0721898
+symmetry_perimeter_interaction,symmetry perimeter interaction,1.070317
+size_color_contrast_ratio,size color contrast ratio,1.0697755
+tbp_lv_symm_2axis,symm 2axis,1.0667629
+tbp_lv_Lext,Lext,1.0663611
+lesion_severity_index,lesion severity index,1.0660095
+color_contrast_index,color contrast index,1.0647383
+tbp_lv_y,y,1.0643667
+tbp_lv_L,L,1.0628637
+shape_color_consistency,shape color consistency,1.0616183
+clin_size_long_diam_mm,clin size long diam mm,1.061153
+tbp_lv_x,x,1.0606526
+tbp_lv_minorAxisMM,minorAxisMM,1.0605614
+tbp_lv_color_std_mean,color std mean,1.058908
+hue_color_std_interaction,hue color std interaction,1.0584865
+tbp_lv_deltaL,deltaL,1.0579078
+consistency_color,consistency color,1.0575626
+tbp_lv_stdL,stdL,1.0557724
+tbp_lv_deltaLBnorm,deltaLBnorm,1.055086
+overall_color_difference,overall color difference,1.0528551
+age_normalized_nevi_confidence,age normalized nevi confidence,1.0497978
+tbp_lv_symm_2axis_angle,symm 2axis angle,1.0482596
+color_shape_composite_index,color shape composite index,1.0479673
+position_distance_3d,position distance 3d,1.0475138
+normalized_lesion_size,normalized lesion size,1.0466294
+tbp_lv_stdLExt,stdLExt,1.0444635
+tbp_lv_perimeterMM,perimeterMM,1.0440172
+tbp_lv_Hext,Hext,1.0437086
+shape_complexity_index,shape complexity index,1.0422254
+tbp_lv_deltaB,deltaB,1.0385292
+border_complexity,border complexity,1.0382457
+tbp_lv_H,H,1.0381902
+color_asymmetry_index,color asymmetry index,1.0367764
+age_size_symmetry_index,age size symmetry index,1.0359565
+tbp_lv_radial_color_std_max,radial color std max,1.0354904
+consistency_symmetry_border,consistency symmetry border,1.0344919
+symmetry_border_consistency,symmetry border consistency,1.0338377
+luminance_contrast,luminance contrast,1.0323809
+tbp_lv_norm_color,norm color,1.0299197
+tbp_lv_z,z,1.0292066
+color_variance_ratio,color variance ratio,1.0267137
+tbp_lv_Aext,Aext,1.0259268
+age_approx,age approx,1.0252055
+volume_approximation_3d,volume approximation 3d,1.0233026
+lesion_color_difference,lesion color difference,1.0228125
+tbp_lv_eccentricity,eccentricity,1.0203905
+color_consistency,color consistency,1.0160019
+perimeter_to_area_ratio,perimeter to area ratio,1.0149086
+tbp_lv_norm_border,norm border,1.0080354
+std_dev_contrast,std dev contrast,1.0032808
+comprehensive_lesion_index,comprehensive lesion index,1.0029242
+area_to_perimeter_ratio,area to perimeter ratio,1.0014012
+tbp_lv_B,B,1.0008756
+log_lesion_area,log lesion area,0.99350256
